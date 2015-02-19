@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1424377618 source:c:\users\erick\desktop\examen\examen\main.cpp
+	<iostream>
+	"Vehiculo.h"
+	"Registro.h"
+	"Comprador.h"
+	"BusquedaGenerica.h"
+	"OrdenamientoGenerico.h"
+
+1424376888 c:\users\erick\desktop\examen\examen\vehiculo.h
+	<iostream>
+
+1424375973 c:\users\erick\desktop\examen\examen\registro.h
+	<iostream>
+	"Vehiculo.h"
+	"Comprador.h"
+
+1424375331 c:\users\erick\desktop\examen\examen\comprador.h
+	<iostream>
+
+1424376521 c:\users\erick\desktop\examen\examen\busquedagenerica.h
+
+1423670124 c:\users\erick\desktop\examen\examen\ordenamientogenerico.h
+	<iostream>
+
+1424377185 c:\users\erick\desktop\examen\examen\camioneta.h
+	<iostream>
+
+1424377209 c:\users\erick\desktop\examen\examen\motocicleta.h
+	<iostream>
+
