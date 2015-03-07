@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1425513860 source:c:\users\erick\google drive\_tec\4to semestre\estructura de datos\tarea3\ej3\ej3\main.cpp
+	<iostream>
+	"OrderedLinkedList.h"
+	"LinkedList.h"
+	"Persona.h"
+	"BusquedaGenerica.h"
+
+1425512971 c:\users\erick\google drive\_tec\4to semestre\estructura de datos\tarea3\ej3\ej3\orderedlinkedlist.h
+	"Persona.h"
+	"Node.h"
+	"LinkedList.h"
+	"OrdenamientoGenerico.h"
+
+1425504079 c:\users\erick\google drive\_tec\4to semestre\estructura de datos\tarea3\ej3\ej3\persona.h
+	<iostream>
+	"string.h"
+
+1425503000 c:\users\erick\google drive\_tec\4to semestre\estructura de datos\tarea3\ej3\ej3\node.h
+
+1425515488 c:\users\erick\google drive\_tec\4to semestre\estructura de datos\tarea3\ej3\ej3\linkedlist.h
+	"Node.h"
+
+1423768236 c:\users\erick\google drive\_tec\4to semestre\estructura de datos\tarea3\ej3\ej3\busquedagenerica.h
+
+1423670124 c:\users\erick\google drive\_tec\4to semestre\estructura de datos\tarea3\ej3\ej3\ordenamientogenerico.h
+	<iostream>
+
