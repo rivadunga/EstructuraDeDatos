@@ -57,7 +57,7 @@ int main()
 
 
 
-vector<int> ejecutarOperacionLineal(vector<char> cad)
+vector<int> ejecutarOperacionLineal(vector<char> cad) //Ejemplo {1,2,3} + {1,2} = [1][2]
 {
    vector<int> resPar;
    bool iniciaConjunto = false;
@@ -67,7 +67,7 @@ vector<int> ejecutarOperacionLineal(vector<char> cad)
         vector<char> conjuntoStr;
         vector<int> conjunto;
 
-        if (iniciaConjunto && cad.at(i) != '{' && cad.at(i) != '}' && cad.at(i) == '+' && cad.at(i) == '*')
+        if (iniciaConjunto && cad.at(i) != '{' && cad.at(i) != '}' && cad.at(i) != '+' && cad.at(i) != '*')
         {
             conjuntoStr.push_back(cad.at(i)); //Agregar elementosStr al vector, siempre y cuando no sean operadores
         }
