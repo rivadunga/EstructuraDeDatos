@@ -51,8 +51,6 @@ int main()
         }
     }
 
-    //Solo falta ejecutar una operacionLineal de los parentesis
-    //Ejemplo V(A) + V(B)) * V(C) + V(D)
 }
 
 
