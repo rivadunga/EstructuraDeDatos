@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string.h>
 #include "Persona.h"
-#include "BinaryTree.h"
+#include "BinaryTreeDeforme.h"
 using namespace vcn;
 
 
-BinaryTree<Persona> arbol;
+BinaryTreeDeforme<Persona> arbol;
 void agregarHijo();
 void verDescendientes();
 void verHermanosYPrimos();
@@ -58,8 +58,8 @@ void agregarHijo()
     Persona hijo(hijoNom);
 
 
-    BNode<Persona> * padreNode = arbol.search(padre);
-    BNode<Persona> * hijoNode = new BNode<Persona>(hijo);
+    BNodeDeforme<Persona> * padreNode = arbol.search(padre);
+    BNodeDeforme<Persona> * hijoNode = new BNodeDeforme<Persona>(hijo);
 
     arbol.insert(padreNode,hijoNode);
     arbol.preOrder();
@@ -70,7 +70,7 @@ void verDescendientes()
     cout << "Padre: ";
     cin >> padreNom;
     Persona padre(padreNom);
-    BNode<Persona> * padreNode = arbol.search(padre);
+    BNodeDeforme<Persona> * padreNode = arbol.search(padre);
     arbol.preOrder(padreNode);
 }
 void verHermanosYPrimos()
@@ -79,7 +79,7 @@ void verHermanosYPrimos()
     cout << "Nombre: ";
     cin >> nombre;
     Persona persona(nombre);
-    BNode<Persona> * nodo = arbol.search(persona);
+    BNodeDeforme<Persona> * nodo = arbol.search(persona);
     arbol.primosyHermanos(nodo);
 }
 void verAncestros()
@@ -88,7 +88,7 @@ void verAncestros()
     cout << "Padre: ";
     cin >> padreNom;
     Persona padre(padreNom);
-    BNode<Persona> * padreNode = arbol.search(padre);
+    BNodeDeforme<Persona> * padreNode = arbol.search(padre);
     arbol.ancestors(padreNode);
 }
 void establecerFallecido()
@@ -101,7 +101,7 @@ void establecerFallecido()
     cin >> fecha;
 
     Persona nombreP(nombre);
-    BNode<Persona> * nodo = arbol.search(nombreP);
+    BNodeDeforme<Persona> * nodo = arbol.search(nombreP);
 
     if (nodo == nullptr){
         cout << "No se encontro" << endl;
@@ -120,13 +120,13 @@ void visualizarFallecidos()
     cout << "Fecha de defunsión menor a (Formato DDMMAAAA): ";
     cin >> fecha;
     arbol.preOrder(arbol.getRoot(),
-                   [](BNode<Persona>* nodo){
+                   [](BNodeDeforme<Persona>* nodo){
                         if (nodo->getInfo().getfallecido() && nodo->getInfo().getfecha() < 12123) return true; return false; });
 
 }
 void visualizarVivos()
 {
     arbol.preOrder(arbol.getRoot(),
-                   [](BNode<Persona>* nodo){
+                   [](BNodeDeforme<Persona>* nodo){
                         if (!nodo->getInfo().getfallecido()) return true; return false; });
 }
